@@ -8,8 +8,8 @@ while r != 'n':
     x = int(input('Enter value: '))
     print('Want to continue [y/n]', end=' ')
     r = str(input())
-    c = c + 1
-    s += x
+    c = c + 1   #counting entries
+    s += x  #Adding entered values
     if c == 1:
         bigger = x
         smaller = x
