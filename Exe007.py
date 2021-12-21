@@ -5,21 +5,21 @@ considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1'''
 
 withD = int(input('withdrawal amount: '))
 total = withD
-bill = 50
-bills = 0
+ballot = 50
+ballots = 0
 while True:
-    if total >= bill:
-        total -= bill
-        bills += 1
+    if total >= ballot:
+        total -= ballot
+        ballots += 1
     else:
-        if bills > 0:
-            print(f'{bills} bills of ${bill}')
-        if bill == 50:
-            bill = 20
-        elif bill == 20:
-            bill = 10
-        elif bill == 10:
-            bill = 1
-        bills = 0
+        if ballots > 0:
+            print(f'{ballots} bills of ${ballot}')
+        if ballot == 50:
+            ballot = 20
+        elif ballot == 20:
+            ballot = 10
+        elif ballot == 10:
+            ballot = 1
+        ballots = 0
         if total == 0:
             break
